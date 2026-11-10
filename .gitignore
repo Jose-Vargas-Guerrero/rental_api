@@ -1,0 +1,47 @@
+# #############################################################
+# 1. SEGURIDAD Y CONFIGURACIÓN (CRÍTICO para dotenv y MySQL)
+# #############################################################
+# Nunca subas tus contraseñas de MySQL, tokens o puertos de Express
+.env
+.env.local
+.env.*.local
+
+# Archivos de respaldo o configuración local
+config.local.json
+
+
+# #############################################################
+# 2. DEPENDENCIAS (Node.js)
+# #############################################################
+# Evita subir las librerías que instalas con npm/yarn (son pesadas)
+node_modules/
+/jspm_packages/
+
+
+# #############################################################
+# 3. REGISTROS Y TEMPORALES (Logs)
+# #############################################################
+# Archivos que se generan automáticamente al ocurrir errores
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# #############################################################
+# 4. ARCHIVOS DEL SISTEMA OPERATIVO Y EDITORES (Basura local)
+# #############################################################
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code / Editores (Opcional, pero recomendado)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
